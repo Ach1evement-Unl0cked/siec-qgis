@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Clip path to restrict drawing inside the inner circle -->
+    <clipPath id="circle-clip">
+      <circle cx="250" cy="250" r="215" />
+    </clipPath>
+  </defs>
+
+  <!-- Background / Base White Circle -->
+  <circle cx="250" cy="250" r="215" fill="#ffffff" />
+
+  <!-- Top-left Black Segment -->
+  <g clip-path="url(#circle-clip)">
+    <polygon points="-50,-50 455,-50 -50,455" fill="#000000" />
+  </g>
+
+  <!-- Outer Circle Stroke -->
+  <circle cx="250" cy="250" r="215" fill="none" stroke="#000000" stroke-width="12" />
+</svg>
